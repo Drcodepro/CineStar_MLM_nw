@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineStar</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- oswald font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    
+
+     <!-- font awasom link -->
+    <script src="https://kit.fontawesome.com/48b4e95150.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!-- section heading dummy -->
+
+
+
+    <nav  class="nav_container" id="navBar">
+        <img loading="lazy"    src="assets/icon/cinestar_logo.png" alt="" class="finunity_logo" />
+
+        <!-- <div  class={`${isvisible  ?  "none" :"navIsHidden "} nav_navigation_container`}> -->
+           <div class="navIsHidden  nav_navigation_container">
+               <a href="#navBar"><div class="nav_navigation flex" >Home</div></a>
+
+               <hr />
+
+               <a href="#aboutSection"><div class="nav_navigation flex" >About Us</div></a>
+
+               <hr />
+
+               <a href="#howWorkSection"><div class="nav_navigation flex" >How Work</div></a>
+             
+               <hr />
+
+               <a href="#upCommingSection"><div class="nav_navigation flex" >Up Comming</div></a>
+               
+               <hr />
+
+               <a href="#whyChooseSection"><div class="nav_navigation flex" >Why To Choose</div></a>
+
+               <hr />
+
+                <a href="#footer"><div class="nav_navigation"  >Contact</div></a>
+                
+            </div>
+
+            <div class="buy_button"> 
+                <button>Sign In</button>
+            </div>
+
+            <div class= "toggle_nav_button" onClick={handleIsVisible}>
+                <i class="fa-solid fa-bars fa-xl"></i>        
+            </div>
+    </nav>
+
+    <!-- landing Page -->
+
+    <div class='Landing_page'>
+        <video src="assets/lonedrop_bg.mp4" autoPlay loop muted class='Landing_bg_video'></video>
+        <img loading="lazy"   src="assets/image/Landing_bg.jpg" class='Landing_bg_img' alt="Landing_poster_bg" />
+        
+        <div class="Landing_info_container">
+          <div class="info_head">
+            <span>Cinestar:</span>
+            <p class="info">Invest in the Future of Cinema (and Yourself).</p>
+          </div>
+  
+          <h1 class="main_info">Invest in Cinestar and become a part of a revolutionary platform that's transforming the film industry.</h1>
+          
+          <div class="landing_button_container">
+            <div class="landing_button1"> 
+              <button>Invest Now</button>
+            </div>
+  
+            <div class="landing_button2"> 
+              <button>Learn More</button>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+
+
+      <!-- About Page -->
+
+      <div class='About_Page'>
+      
+        <div class='About_content_box'>
+  
+          <div class='about_info_container'>
+              <div class='mini_heading'>About CineStar</div>
+              <div class='about_content'>
+                  <h1>Transform Your Love for Movies into a Profitable Venture</h1>
+                  <p>At Cinestar, we bring the magic of movies to the world of business, creating a unique and engaging platform for movie enthusiasts and entrepreneurs alike. Our mission is to combine the excitement of cinema with the power of networking to help you achieve your dreams.</p>
+              </div>
+          </div>
+  
+          <div class='about_poster_container'>
+              <img loading="lazy"   loading='lazy' src="assets/image/cinestar_about.webp" alt="poster" />
+               <!-- <div class='about_other_info'>
+                  <p>2013 <br />All Member</p>
+                  <p>12.5M <br />Average Investment</p>
+              </div>  -->
+          </div>
+  
+        </div>
+  
+      </div>
+
+
+
+      <!-- Key Points Section -->
+
+    <div class="keyPointPage">
+        <div class="section_heading_container">
+            <div class='mini_heading'>About CineStar</div>
+            <h1>Our Key Points</h1>
+            <p>Empower your crypto journey with Investment ROI - The Crypto Factory. Navigate the world of digital assets confidently.</p>
+        </div>
+
+        <div class="keyPoint_main_content">
+            <img loading="lazy"   class="KeyPoint_poster" src="./assets/image/men_piramid.webp" alt="poster">
+
+            <div class="key_points_cointer">
+                <div class="key_point">
+                    <h1>HIGH LIQUIDITY</h1>
+                    <p>lorem epsom fshdio afshd auif dsaf lorem epsom fshdio afshd auif dsaf</p>
+                </div>
+
+                <div class="key_point">
+                    <h1> STRONG SECURITY</h1>
+                    <p>lorem epsom fshdio afshd auif dsaf lorem epsom fshdio afshd auif dsaf</p>
+                </div>
+
+                <div class="key_point">
+                    <h1> STRONG SECURITY</h1>
+                    <p>lorem epsom fshdio afshd auif dsaf lorem epsom fshdio afshd auif dsaf</p>
+                </div>
+
+                <div class="key_point">
+                    <h1> STRONG SECURITY</h1>
+                    <p>lorem epsom fshdio afshd auif dsaf lorem epsom fshdio afshd auif dsaf</p>
+                </div>
+
+                <div class="key_point">
+                    <h1> STRONG SECURITY</h1>
+                    <p>lorem epsom fshdio afshd auif dsaf lorem epsom fshdio afshd auif dsaf</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- how it work section -->
+
+    <div class="HowWorkPage">
+        <div class="section_heading_container">
+            <div class='mini_heading'>Working</div>
+            <h1>How It Works</h1>
+            <p>Empower your crypto journey with Investment ROI - The Crypto Factory. Navigate the world of digital assets confidently.</p>
+        </div>
+
+        <div class="HowWork_main_content">
+
+            <div class="Howwork_points_cointer">
+                <div class="HowWork_point">
+                   <div class="point_number">01</div>
+                   <div class="PointInfo_box">
+                       <h1>Register & Login</h1>
+                       <p>Visit our website and sign up for an account</p>
+                   </div>
+                </div>
+
+                <div class="HowWork_point">
+                    <div class="point_number">02</div>
+                    <div class="PointInfo_box">
+                     <h1>Choose a Package</h1>
+                     <p>Select from our range of packages</p>
+                    </div>
+                 </div>
+
+                 <div class="HowWork_point">
+                    <div class="point_number">03</div>
+                    <div class="PointInfo_box">
+                     <h1>Deposit Funds</h1>
+                     <p>Make your initial investment</p>
+                    </div>
+                 </div>
+
+                 <div class="HowWork_point">
+                    <div class="point_number">04</div>
+                    <div class="PointInfo_box">
+                     <h1>Start Earning</h1>
+                     <p>Begin earning daily ROI</p>
+                    </div>
+                 </div>
+
+            </div>
+            
+            <img loading="lazy"   class="KeyPoint_poster" src="./assets/image/red_lapy_man.webp" alt="poster">
+
+        </div>
+        
+
+    </div>
+
+
+
+
+    <!-- Subsription info section -->
+
+    <div class="subscriptionPage">
+        <div class="section_heading_container">
+            <div class='mini_heading'>Subscription</div>
+            <h1>Subscription Info.</h1>
+            <p> 50% Distribution in team</p>
+        </div>
+
+        <div class="subscription_main_content">
+           
+            <img loading="lazy" class="subscription_poster" src="./assets/image/seat_light.webp" alt="logo">
+            
+            <div class="Subscription_info_container">
+                    <div class="sub_point">1st Level:15%</div>
+                    <div class="sub_point">2nd Level:10%</div>
+                    <div class="sub_point">3rd Level:5%</div>
+                    <div class="sub_point">4th Level:3%</div>
+                    <div class="sub_point">5th-7th Level:2%</div>
+                    <div class="sub_point">8th-13th Level:1%</div>
+                    <div class="sub_point">14th Level:2%</div>
+                    <div class="sub_point">15th Level:2%</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- investment plan section -->
+
+    <div class="InvestmentPlanPage">
+        <div class="section_heading_container">
+            <div class='mini_heading'>Subscription</div>
+            <h1>Subscription Info.</h1>
+            <p> 50% Distribution in team</p>
+        </div>
+
+        <div class="Investment_plan_container">
+
+            <div class="Investment_plan_box">
+                <p class="plan_price">100$ to 999$</p>
+                <div class="plan_other_info">
+                    <p>8% Every Day</p>
+                    <p>250%</p>
+                </div>
+                <button class="invest_button">INVEST NOW</button>
+            </div>
+
+            <div class="Investment_plan_box">
+                <p class="plan_price">1000$ to 4999$</p>
+                <div class="plan_other_info">
+                    <p>12% Every Day</p>
+                    <p>300%</p>
+                </div>
+                <button class="invest_button">INVEST NOW</button>
+            </div>
+
+
+            <div class="Investment_plan_box">
+                <p class="plan_price">5000$ to 19000$</p>
+                <div class="plan_other_info">
+                    <p>13% Every Day</p>
+                    <p>325%</p>
+                </div>
+                <button class="invest_button">INVEST NOW</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Income Source style -->
+
+    <div class="IncomeSourcePage">
+        <div class="section_heading_container">
+            <div class='mini_heading'>Income</div>
+            <h1>Income Source</h1>
+            <p>Explore unique investments in Blockchain Technology, AI, and the Metaverse at Cinestar. Diversify for innovation.</p>
+        </div>
+
+        <div class="Income_main_content">
+            <div class="income_sources">
+                <div>Sponsor Income : <span>&nbsp;5% (One Time)</span></div>
+                <div>Generation Income Up to <span> &nbsp;25th Level</span></div>
+            </div>
+
+            <img loading="lazy" src="./assets/image/income_source.webp" alt="">
+
+        </div>
+    </div>
+
+</body>
+</html>
