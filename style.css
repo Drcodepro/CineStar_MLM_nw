@@ -27,29 +27,32 @@
 .section_heading_container .mini_heading{
     width: fit-content;
     padding: 0.5rem 2rem;
-    background: rgb(255,101,101);
-    background: linear-gradient(310deg, rgba(255,101,101,1) 66%, rgba(219,9,9,1) 100%);
     position: relative;
     border-radius: 5rem;
-    box-shadow: 0 0 10px 1px #ff5656ca;
+    background-color: #0F0B15;
+
 
     &::after{
-        content: "About Cinestar";
+        content: "";
         color: rgb(222, 222, 222);
         font-weight: 400;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
-        width: 98%;
-        height:97%;
+        width: 104%;
+        height:104%;
         border: 5rem;
-        background-color: #0F0B15;
+        background: rgb(255,101,101);
+        background: linear-gradient(310deg, rgba(255,101,101,1) 66%, rgba(219,9,9,1) 100%);
+        box-shadow: 0 0 10px 1px #ff5656ca;
+
         border-radius: 5rem;
         display: flex;
         justify-content: center;
         align-items: center;
         line-height: 1;
+        z-index: -1;
     }
 }
 
@@ -793,7 +796,6 @@ gap: 0.5rem;
 
 
 /* Key Point Section Style */
-
 
 .keyPointPage , .HowWorkPage{
     width: 100%;
