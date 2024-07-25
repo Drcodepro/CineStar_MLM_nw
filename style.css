@@ -60,8 +60,8 @@
     font-size: 2.5rem;
 }
 .section_heading_container p{
-    font-size:1rem;
-    font-weight: 400;
+    font-size:1.3rem;
+    font-weight: 300;
     color: rgb(222, 222, 222);
     width: 70%;
 }
@@ -109,7 +109,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: linear-gradient( 111.4deg, rgb(35, 0, 0)  6.5%,  rgb(0, 0, 0) 93.2% );
+    background-color: black;
     color: white;
 }
 
@@ -317,7 +317,7 @@ display: none;
 
 @media (max-width:516px) {
     .nav_container{
-        padding:0.3rem 1rem;
+        padding:0.5rem 1rem;
     }
 
     .nav_container .finunity_logo{
@@ -680,8 +680,8 @@ display: none;
     margin-bottom: 1rem;
 }
 .about_info_container .about_content p{
-    font-size:1rem;
-    font-weight: 400;
+    font-size:1.3rem;
+    font-weight: 300;
     color:rgb(222, 222, 222);
 }
 
@@ -837,8 +837,8 @@ background-color: #783d3d56;
 border-radius: 7rem;
 padding: 0.3rem 1.5rem;
 box-sizing: border-box;
-/* border-top: red solid 1px;
-border-bottom: red solid 1px; */
+border-top: red solid 1px;
+border-bottom: red solid 1px;
 border-left: red solid 4px;
 border-right: red solid 4px;
 }
@@ -850,8 +850,8 @@ border-right: red solid 4px;
 }
 
 .key_points_cointer .key_point p{
-    font-size: 1rem;
-    font-weight: 400px;
+    font-size: 1.3rem;
+    font-weight: 300;
     color:rgb(222, 222, 222);
 }
 
@@ -986,8 +986,8 @@ gap: 0.5rem;
 }
 
 .Howwork_points_cointer .HowWork_point p{
-    font-size: 1rem;
-    font-weight: 400px;
+    font-size: 1.3rem;
+    font-weight: 300;
     color:rgb(222, 222, 222);
 }
 
@@ -1364,7 +1364,7 @@ width: 40%;
 
 .income_sources div{
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 300;
     color:rgb(222, 222, 222);
 
 width: fit-content;
@@ -1392,7 +1392,7 @@ border-right: red solid 4px;
 @media (max-width:850px) {
     .income_sources div{
         font-size: 1rem;
-        font-weight: 400;
+        font-weight: 300;
         color:rgb(222, 222, 222);
         height: 3rem;
     }
@@ -1422,7 +1422,7 @@ border-right: red solid 4px;
     .income_sources div{
         width:90%;
         font-size: 1rem;
-        font-weight: 400;
+        font-weight: 300;
         color:rgb(222, 222, 222);
         height: 3rem;
     }
@@ -1494,8 +1494,50 @@ border-right: red solid 4px;
 }
 
 .salary_plane_box p{
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: 1.3rem;
+    font-weight: 300;
     color:rgb(222, 222, 222);
     text-align: center;
+}
+
+
+@media (max-width:500px) {
+    .salaryPlane_container .salary_plane_box{
+        width:100%;
+        gap: 1rem;
+    }
+
+    .salary_plane_box h1{
+        font-size: 1.5rem;
+        color: #FF2D2D;
+    }
+    
+    .salary_plane_box p{
+        font-size: 0.9rem;
+        font-weight: 300;
+        color:rgb(222, 222, 222);
+        text-align: center;
+    }
+}
+
+
+
+@media (max-width:370px) {
+    .salaryPlane_container .salary_plane_box{
+        width:100%;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .salary_plane_box h1{
+        font-size: 1rem;
+        color: #FF2D2D;
+    }
+    
+    .salary_plane_box p{
+        font-size: 0.8rem;
+        font-weight: 300;
+        color:rgb(222, 222, 222);
+        text-align: center;
+    }
 }
