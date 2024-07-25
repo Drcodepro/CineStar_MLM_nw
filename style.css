@@ -879,6 +879,9 @@ border-right: red solid 4px;
         gap: 2rem;
         margin-bottom: 3rem;
     }
+    .keyPoint_main_content .KeyPoint_poster{
+        width: 60%;
+        }
 
     .keyPointPage .keyPoint_main_content, .HowWorkPage .keyPoint_main_content{
         gap: 2rem;
@@ -1045,6 +1048,9 @@ gap: 0.5rem;
         font-size: 0.9rem;
         font-weight: 300px;
     }
+    .HowWork_main_content .KeyPoint_poster{
+        width: 60%;
+        }
 }
 
 
@@ -1146,6 +1152,10 @@ width: 40%;
         gap: 2rem;
         margin-bottom: 3rem;
     }
+
+    .subscription_main_content .subscription_poster{
+        width: 60%;
+        }
 
     .subscription_main_content .Subscription_info_container{
         column-gap: 1rem;
