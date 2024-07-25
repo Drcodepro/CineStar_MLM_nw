@@ -1084,7 +1084,7 @@ gap: 0.5rem;
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
     background-image: url(./assets/image/subcription_info_bg.png);
     background-size: cover;
 }
@@ -1338,7 +1338,7 @@ width: 40%;
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
 
     background-image: url(./assets/image/HowWork_bg.png);
     background-size: cover;
@@ -1364,7 +1364,7 @@ width: 40%;
 
 .income_sources div{
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 400;
     color:rgb(222, 222, 222);
 
 width: fit-content;
@@ -1392,7 +1392,7 @@ border-right: red solid 4px;
 @media (max-width:850px) {
     .income_sources div{
         font-size: 1rem;
-        font-weight: 600;
+        font-weight: 400;
         color:rgb(222, 222, 222);
         height: 3rem;
     }
@@ -1422,7 +1422,7 @@ border-right: red solid 4px;
     .income_sources div{
         width:90%;
         font-size: 1rem;
-        font-weight: 600;
+        font-weight: 400;
         color:rgb(222, 222, 222);
         height: 3rem;
     }
@@ -1442,4 +1442,60 @@ border-right: red solid 4px;
     .IncomeSourcePage .Income_main_content{
         gap: 1rem;
     }
+}
+
+
+
+
+/* salary Plane section style */
+
+.SalaryPlanePage{
+    position: relative;
+    width: 100%;
+    padding: 0rem 2rem;
+    padding-bottom: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    background-image: url(./assets/slaryPlane_bg.webp);
+    background-size: cover;
+}
+
+.SalaryPlanePage .salaryPlane_container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+}
+
+.salaryPlane_container .salary_plane_box{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    height: fit-content;
+    padding: 2rem;
+    color: white;
+    border:#FF2D2D;
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.745);
+    box-shadow: 0 0 15px 1px #ef646470;
+}
+
+.salary_plane_box h1{
+    font-size: 1.5rem;
+    color: #FF2D2D;
+}
+
+.salary_plane_box p{
+    font-size: 1rem;
+    font-weight: 400;
+    color:rgb(222, 222, 222);
+    text-align: center;
 }
