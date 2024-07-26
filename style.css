@@ -925,6 +925,7 @@ border-top: red solid 1px;
 border-bottom: red solid 1px;
 border-left: red solid 4px;
 border-right: red solid 4px;
+opacity: 0;
 }
 
 
@@ -1019,7 +1020,6 @@ border-right: red solid 4px;
     }
     .keyPoint_main_content .KeyPoint_poster{
         width: 60%;
-        opacity: 0;
         }
 
     .keyPointPage .keyPoint_main_content, .HowWorkPage .keyPoint_main_content{
@@ -1078,6 +1078,7 @@ border-right: red solid 4px;
 
 .HowWork_main_content .howWork_poster{
 width: 40%;
+opacity: 0;
 }
 
 .HowWork_main_content .Howwork_points_cointer{
@@ -1096,6 +1097,7 @@ display: flex;
 justify-content:start;
 align-items: center;
 gap: 0.5rem;
+
 }
 
 .HowWork_point .point_number{
@@ -1114,6 +1116,7 @@ gap: 0.5rem;
     border-bottom: rgb(255, 255, 255) solid 1px; 
     border-left: rgb(255, 255, 255) solid 1px;
     border-right: rgb(255, 255, 255) solid 1px;
+    opacity: 0;
 }
 
 .Howwork_points_cointer .HowWork_point h1{
