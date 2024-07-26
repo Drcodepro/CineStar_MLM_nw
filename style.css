@@ -684,6 +684,8 @@ display: none;
 
     background-image: url(./assets/image/about_bg.png);
     background-size: cover;
+    
+    opacity: 0;
 }
 
 
