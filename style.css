@@ -10,6 +10,9 @@
     background-color: black;
 }
 
+/* p{
+    font-family: "Inter", sans-serif;
+} */
 
 /* Section heading container */
 
@@ -160,7 +163,7 @@
 
 
 /* Button */
-.nav_container .buy_button button {
+.nav_container .signIn_button button {
     color: white;
   touch-action: manipulation;
   cursor: pointer;
@@ -187,7 +190,7 @@
               0 0.125rem 0.25rem 0 rgb(207, 70, 70) inset;
 }
 
-.nav_container .buy_button button::before {
+.nav_container .signIn_button button::before {
   content: "";
   display: block;
   height: 0.125rem;
@@ -203,7 +206,7 @@
   background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
 }
 
-.nav_container .buy_button button::after {
+.nav_container .signIn_button button::after {
   content: "";
   display: block;
   height: 0.125rem;
@@ -220,11 +223,11 @@
   background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
 }
 
-.nav_container .buy_button button:hover {
+.nav_container .signIn_button button:hover {
   filter: brightness(1.1);
 }
 
-.nav_container .buy_button button:active {
+.nav_container .signIn_button button:active {
   transform: scale(0.9);
 }
 
@@ -245,7 +248,7 @@ display: none;
         font-size: 0.8rem;
     }
 
-    .nav_container .buy_button{
+    .nav_container .signIn_button{
         padding-left: 0.5rem;
         padding-right: 0.5rem;
         font-size: 0.8rem;
@@ -283,7 +286,7 @@ display: none;
         display: block;  
     }
 
-    .nav_container .buy_button{
+    .nav_container .signIn_button{
         display: none;
     }
 
@@ -325,7 +328,7 @@ display: none;
     }
 
 
-    .nav_container .buy_button{
+    .nav_container .signIn_button{
         padding-left: 0.3rem;
         padding-right: 0.3rem;
         padding-top: 0.1rem;
@@ -339,7 +342,7 @@ display: none;
     .nav_container img{
         width:3rem;
     }
-    .nav_container .buy_button{
+    .nav_container .signIn_button{
         font-size: 0.4rem;
         font-weight: 600;
         padding-left: 0.2rem;
@@ -420,6 +423,7 @@ display: none;
 
     display: flex;
     align-items: center;
+    opacity: 0;
 }
 
 .Landing_info_container .info_head .info{
@@ -447,7 +451,52 @@ display: none;
 .Landing_info_container .main_info{
     font-size: 3rem;
     line-height: 1.1;
+    opacity: 0;
 }
+
+
+
+/* animation classes */
+
+.landing_main_anim {
+    animation-name: landing_main_anim;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+}
+
+.landing_head_info_anim{
+    animation-name: landing_head_anim;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+}
+
+
+  /* landing page animation */
+
+  @keyframes landing_main_anim {
+    0%{
+        transform: translateX(200px);
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+  }
+
+  @keyframes landing_head_anim {
+    0%{
+        transform: translateX(-200px);
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+  }
+  
 
 
 
@@ -459,9 +508,10 @@ display: none;
     justify-content: start;
     align-items: center;
     gap: 2rem;
+    opacity: 0;
 }
 
- .landing_button1 button,.landing_button2 button {
+ .Invest_button button,.landing_button2 button {
     color: white;
     touch-action: manipulation;
     cursor: pointer;
@@ -490,7 +540,7 @@ display: none;
   
 
   
-   .landing_button1 button::before,.landing_button2 button::before {
+   .Invest_button button::before,.landing_button2 button::before {
     content: "";
     display: block;
     height: 0.125rem;
@@ -506,7 +556,7 @@ display: none;
     background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
   }
   
-   .landing_button1 button::after,.landing_button2 button::after {
+   .Invest_button button::after,.landing_button2 button::after {
     content: "";
     display: block;
     height: 0.125rem;
@@ -523,11 +573,11 @@ display: none;
     background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
   }
   
-   .landing_button1 button:hover,.landing_button2 button:hover {
+   .Invest_button button:hover,.landing_button2 button:hover {
     filter: brightness(1.1);
   }
   
-   .landing_button1 button:active,.landing_button2 button:active {
+   .Invest_button button:active,.landing_button2 button:active {
     transform: scale(0.9);
   }
   
@@ -635,6 +685,27 @@ display: none;
     background-image: url(./assets/image/about_bg.png);
     background-size: cover;
 }
+
+
+/* animation class */
+.AboutBox_anim{
+    animation-name: AboutPage_anim ;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    scale: 0;
+    opacity: 0;
+    transform: translateX(1000px);
+}
+
+@keyframes AboutPage_anim {
+   to{
+        scale: 1;
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
 
 .About_content_box .about_info_container{
     width: 45%;
@@ -806,6 +877,18 @@ gap: 0.5rem;
     align-items: center;
     gap: 4rem;
     margin-bottom: 6rem;
+
+    position: relative;
+    &::before{
+        content: ".";
+        width:1px;
+        height:1px;
+        box-shadow: 0 0 900px 60px red;
+        position: absolute;
+        top: 60%;
+        left: 30%;
+        z-index: -1;
+    }
 }
 
 
@@ -859,6 +942,18 @@ border-right: red solid 4px;
 @media (max-width:1000px) {
     .keyPointPage, .HowWorkPage{
         gap: 3rem;
+
+        position: relative;
+        &::before{
+            content: ".";
+            width:1px;
+            height:1px;
+            box-shadow: 0 0 150px 30px red;
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            z-index: -1;
+        }
     }
 
     .keyPointPage .keyPoint_main_content, .HowWorkPage .keyPoint_main_content{
@@ -1260,9 +1355,9 @@ width: 40%;
 
 .Investment_plan_box .plan_other_info{
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 0.1rem;
-    width: 100%;
+    justify-content:center;
+    padding-bottom: 0.2rem;
+    width: 90%;
     font-size: 1.3rem;
     font-weight: 300;
     color:rgb(222, 222, 222);
@@ -1446,6 +1541,34 @@ border-right: red solid 4px;
 
 
 
+/* Level Opening section style */
+
+.LevelOpeningPage{
+    position: relative;
+    width: 100%;
+    padding: 0rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 6rem;
+
+    background-image: url(./assets/image/HowWork_bg.png);
+    background-size: cover;
+}
+
+.LevelOpeningPage img{
+    width: 60%;
+    box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.271);
+}
+
+@media (max-width:500px) {
+    .LevelOpeningPage img{
+        width:90%;
+    }
+}
+
 
 /* salary Plane section style */
 
@@ -1539,5 +1662,164 @@ border-right: red solid 4px;
         font-weight: 300;
         color:rgb(222, 222, 222);
         text-align: center;
+    }
+}
+
+
+
+
+
+/* Footer Style */
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top:2rem;  
+    background: rgb(1,1,1);
+    background: linear-gradient(0deg, rgba(1,1,1,1) 50%, rgba(24,24,24,1) 100%);
+}
+
+footer .footer_main_content{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #800101;
+}
+
+.footer_main_content .footer_info{
+    width: 45%;
+    padding-left:2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
+    
+}
+
+.footer_main_content .footer_info img{
+    width: 7rem;
+}
+.footer_main_content .footer_info p{
+    color:rgb(222, 222, 222);
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.footer_main_content .footer_info .Invest_button{
+    margin-bottom: 1rem;
+}
+
+
+.footer_main_content .footer_otherInfo{
+width: 50%;
+padding: 2rem 2rem 3rem 3rem;
+display: flex;
+justify-content: space-between;
+align-items: start;
+gap: 2rem;
+border-top:solid 2px #800101;
+border-left: solid 2px #800101;
+border-top-left-radius: 6rem;
+}
+
+.footer_otherInfo .contact_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.footer_otherInfo .contact_info p{
+    color: #cf0000;
+    font-size: 1.2rem;
+}
+.footer_otherInfo .contact_info a{
+    text-decoration: none;
+    color:rgb(222, 222, 222);
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.footer_otherInfo .social_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+}
+
+.footer_otherInfo .social_info p{
+    color: #cf0000;
+    font-size: 1.2rem;
+}
+
+.footer_otherInfo .social_info .social_media_icon{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.social_info .social_media_icon img{
+    width: 2.5rem;
+}
+
+footer .copyright_box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #414141;
+    padding: 1rem 2rem;
+}
+
+footer .copyright_box .term_condition_box{
+    display: flex;
+    gap: 2rem;
+}
+
+
+@media (max-width:800px) {
+    .footer{
+        padding-top:2rem; 
+    }
+    footer .footer_main_content{
+        flex-direction: column;
+        gap: 1rem;
+        border-bottom: 1px solid #800101;
+    }
+
+    .footer_main_content .footer_info{
+        width: 100%;    
+        padding-right: 1rem;
+    }
+    .footer_main_content .footer_otherInfo{
+        width: 100%;
+        padding: 1rem 2rem 1rem 3rem;
+        border-top-left-radius: 0rem;
+        border-top:solid 1px #800101;
+        border-left:none;
+    }
+    footer .copyright_box{
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width:400px) {
+    .footer_main_content .footer_otherInfo{
+        flex-direction:column;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .footer_main_content .footer_info{
+        width: 100%;    
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+    footer .copyright_box{
+        padding: 0.5rem;
+        font-size: 0.6rem;
     }
 }
