@@ -18,15 +18,64 @@ window.onload = function() {
 // about page animation
 
 const aboutbox = document.querySelector(".About_content_box");
+const keyPoint = document.querySelectorAll(".key_point");
+const keyPoster = document.querySelector(".KeyPoint_poster");
 
-const aboutObserver = new IntersectionObserver(
-  (entries,aboutObserver)=>{
+const howPoint = document.querySelectorAll(".PointInfo_box");
+const howPoster = document.querySelector(".howWork_poster");
+
+
+
+const elementObserve = new IntersectionObserver(
+  (entries,elementObserve)=>{
 entries.forEach((entry)=>{
 if(entry.isIntersecting){
+    
+
+    if(entry.target===aboutbox){
     entry.target.classList.add("AboutBox_anim");
+    }
+
+    if([...keyPoint].includes(entry.target)) {
+        entry.target.classList.add("key_point_animation");
+    }
+
+    if(entry.target===keyPoster){
+        entry.target.classList.add("KeyPoint_poster_animation");
+        }
+
+    if([...howPoint].includes(entry.target)) {
+        entry.target.classList.add("key_point_animation");
+    }
+
+    if(entry.target===howPoster){
+        entry.target.classList.add("KeyPoint_poster_animation");
+    }
 }
-else aboutbox.classList.remove("AboutBox_anim");
+// else  {
+//     if(entry.target===aboutbox){
+//         entry.target.classList.remove("AboutBox_anim");
+//         }
+//         if([...keyPoint].includes(entry.target)) {
+//             entry.target.classList.remove("key_point_animation");
+//         }
+//         if(entry.target==keyPoster){
+//             entry.target.classList.remove("KeyPoint_poster_animation");
+//             }
+// }
 });
-},{threshold:0.2}
+},{threshold:0.1}
 );
-aboutObserver.observe(aboutbox);
+
+elementObserve.observe(aboutbox);
+elementObserve.observe(keyPoster);
+elementObserve.observe(howPoster);
+
+
+keyPoint.forEach((keyPoint) => {
+    elementObserve.observe(keyPoint);
+});
+
+howPoint.forEach((howPoint) => {
+    elementObserve.observe(howPoint);
+});
