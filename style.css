@@ -902,6 +902,7 @@ gap: 0.5rem;
 
 .keyPoint_main_content .KeyPoint_poster{
 width: 45%;
+opacity: 0;
 }
 
 .keyPoint_main_content .key_points_cointer{
@@ -1018,6 +1019,7 @@ border-right: red solid 4px;
     }
     .keyPoint_main_content .KeyPoint_poster{
         width: 60%;
+        opacity: 0;
         }
 
     .keyPointPage .keyPoint_main_content, .HowWorkPage .keyPoint_main_content{
