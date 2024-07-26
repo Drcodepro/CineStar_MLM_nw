@@ -684,7 +684,7 @@ display: none;
 
     background-image: url(./assets/image/about_bg.png);
     background-size: cover;
-    
+
     opacity: 0;
 }
 
@@ -1610,9 +1610,9 @@ border-right: red solid 4px;
     box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.271);
 }
 
-@media (max-width:500px) {
+@media (max-width:600px) {
     .LevelOpeningPage img{
-        width:90%;
+        width:95%;
     }
 }
 
