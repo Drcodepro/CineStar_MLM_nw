@@ -89,12 +89,12 @@ gsap.fromTo(".subscriptionPage .sub_point",
     {
         opacity: 0,
         scaleY: 0,
-        // translateX: 100
+        translateY: 100
     },
     {
     opacity:1,
     scaleY:1,
-    // translateX:0,
+    translateY:0,
     stagger:0.1,
     duration:1,
     scrollTrigger:{
@@ -108,11 +108,11 @@ gsap.fromTo(".subscriptionPage .sub_point",
 gsap.fromTo(".subscriptionPage .subscription_poster", 
     {
         opacity: 0,
-        // translateX:-100
+        translateY:-100
     },
     {
     opacity:1,
-    // translateX:0,
+    translateY:0,
     duration:1,
     scrollTrigger:{
         trigger:" .subscriptionPage .subscription_poster",
@@ -151,11 +151,11 @@ gsap.fromTo(".InvestmentPlanPage .Investment_plan_box",
 gsap.fromTo(".income_sources div, .Income_main_content img", 
     {
         opacity: 0,
-    //    translateX:100
+       translateY:100
     },
     {
     opacity:1,
-    // translateX:0,
+    translateY:0,
     stagger:0.2,
     duration:1,
     scrollTrigger:{
@@ -173,11 +173,11 @@ gsap.fromTo(".income_sources div, .Income_main_content img",
 gsap.fromTo(".LevelOpeningPage img", 
     {
         opacity: 0,
-        // translateX: 100
+        translateY: 100
     },
     {
     opacity:1,
-    // translateX:0,
+    translateY:0,
     stagger:0.2,
     duration:1,
     scrollTrigger:{
