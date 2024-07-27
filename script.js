@@ -79,3 +79,133 @@ keyPoint.forEach((keyPoint) => {
 howPoint.forEach((howPoint) => {
     elementObserve.observe(howPoint);
 });
+
+
+
+
+// subscription plane animation
+
+gsap.fromTo(".subscriptionPage .sub_point", 
+    {
+        opacity: 0,
+        scaleY: 0,
+        translateX: 100
+    },
+    {
+    opacity:1,
+    scaleY:1,
+    translateX:0,
+    stagger:0.1,
+    duration:1,
+    scrollTrigger:{
+        trigger:" .subscriptionPage",
+        scroller:"body",
+        toggleActions: "restart none restart none", 
+    }
+})
+
+
+// gsap.fromTo(".subscriptionPage .subscription_poster", 
+//     {
+//         opacity: 0,
+//         translateX:-100
+//     },
+//     {
+//     opacity:1,
+//     translateX:0,
+//     duration:1,
+//     scrollTrigger:{
+//         trigger:" .subscriptionPage .subscription_poster",
+//         scroller:"body",
+//         toggleActions: "restart none restart none", 
+//     }
+// })
+
+
+
+// investment plan section animation
+
+gsap.fromTo(".InvestmentPlanPage .Investment_plan_box", 
+    {
+        opacity: 0,
+        translateY:200,
+        scaleY:0
+    },
+    {
+    opacity:1,
+    translateY:0,
+    scaleY:1,
+    stagger:0.2,
+    duration:1,
+    scrollTrigger:{
+        trigger:" .InvestmentPlanPage .Investment_plan_box",
+        scroller:"body",
+        toggleActions: "restart none restart none", 
+    }
+})
+
+
+
+// Income source section animation
+
+gsap.fromTo(".income_sources div, .Income_main_content img", 
+    {
+        opacity: 0,
+       translateX:100
+    },
+    {
+    opacity:1,
+    translateX:0,
+    stagger:0.2,
+    duration:1,
+    scrollTrigger:{
+        trigger:".IncomeSourcePage",
+        scroller:"body",
+        toggleActions: "restart none restart none", 
+    }
+})
+
+
+
+
+// level up section animation
+
+gsap.fromTo(".LevelOpeningPage img", 
+    {
+        opacity: 0,
+        translateX: 100
+    },
+    {
+    opacity:1,
+    translateX:0,
+    stagger:0.2,
+    duration:1,
+    scrollTrigger:{
+        trigger:".LevelOpeningPage",
+        scroller:"body",
+        toggleActions: "restart none restart none", 
+    }
+})
+
+
+
+// Investment offers section animation
+
+gsap.fromTo(".SalaryPlanePage .salary_plane_box", 
+    {
+        opacity: 0,
+        translateY:200,
+        scaleY:0
+    },
+    {
+    opacity:1,
+    translateY:0,
+    scaleY:1,
+    stagger:0.2,
+    duration:1,
+    scrollTrigger:{
+        trigger:".SalaryPlanePage",
+        scroller:"body",
+        toggleActions: "restart none restart none", 
+    }
+})

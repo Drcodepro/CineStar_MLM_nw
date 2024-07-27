@@ -27,37 +27,53 @@
     color: white;
 }
 
-.section_heading_container .mini_heading{
+
+
+
+
+ .mini_heading {
     width: fit-content;
     padding: 0.5rem 2rem;
     position: relative;
     border-radius: 5rem;
-    background-color: #0F0B15;
-
-
-    &::after{
-        content: "";
-        color: rgb(222, 222, 222);
-        font-weight: 400;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        width: 104%;
-        height:104%;
-        border: 5rem;
-        background: rgb(255,101,101);
-        background: linear-gradient(310deg, rgba(255,101,101,1) 66%, rgba(219,9,9,1) 100%);
-        box-shadow: 0 0 10px 1px #ff5656ca;
-
-        border-radius: 5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        line-height: 1;
-        z-index: -1;
+    background: linear-gradient(0deg, #000, #272727);
+  }
+  
+   .mini_heading:before,  .mini_heading:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5rem;
+    box-shadow: 0 0 10px 1px #ff5656ca;
+    background: linear-gradient(45deg, #0000ff, #00ff00,#ffff00, #ff0000,  #ff0000);
+    background-size: 200%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 10s linear infinite;
+  }
+  
+  @keyframes steam {
+    0% {
+      background-position: 0 0;
     }
-}
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+
+
+
+
+
+
+
+
 
 .section_heading_container h1{
     font-size: 2.5rem;
@@ -83,7 +99,7 @@
 }
 
 @media (max-width:350px) {
-    .section_heading_container .mini_heading{
+     .mini_heading{
         padding: 0.3rem 1.5rem;
         font-size: 0.8rem;
     }
@@ -718,7 +734,7 @@ display: none;
     gap:2rem; 
     color: white;
 }
-
+/* 
 .about_info_container .mini_heading{
     padding: 0.5rem 2rem;
     background: rgb(255,101,101);
@@ -745,7 +761,7 @@ display: none;
         align-items: center;
         line-height: 1;
     }
-}
+} */
 
 .about_info_container .about_content h1{
     font-size:2.5rem;
