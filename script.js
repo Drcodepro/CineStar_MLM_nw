@@ -98,7 +98,7 @@ gsap.fromTo(".subscriptionPage .sub_point",
     stagger:0.1,
     duration:1,
     scrollTrigger:{
-        trigger:" .subscriptionPage",
+        trigger:".subscriptionPage .sub_point",
         scroller:"body",
         toggleActions: "restart none restart none", 
     }
@@ -140,6 +140,7 @@ gsap.fromTo(".InvestmentPlanPage .Investment_plan_box",
     scrollTrigger:{
         trigger:" .InvestmentPlanPage .Investment_plan_box",
         scroller:"body",
+        start:"top 99%",
         toggleActions: "restart none restart none", 
     }
 })
@@ -159,7 +160,7 @@ gsap.fromTo(".income_sources div, .Income_main_content img",
     stagger:0.2,
     duration:1,
     scrollTrigger:{
-        trigger:".IncomeSourcePage",
+        trigger:".IncomeSourcePage .Income_main_content",
         scroller:"body",
         toggleActions: "restart none restart none", 
     }
@@ -183,13 +184,14 @@ gsap.fromTo(".LevelOpeningPage img",
     scrollTrigger:{
         trigger:".LevelOpeningPage",
         scroller:"body",
+        start:"top 80%",
         toggleActions: "restart none restart none", 
     }
 })
 
 
 
-// Investment offers section animation
+// salary plan section animation
 
 gsap.fromTo(".SalaryPlanePage .salary_plane_box", 
     {
@@ -206,6 +208,7 @@ gsap.fromTo(".SalaryPlanePage .salary_plane_box",
     scrollTrigger:{
         trigger:".SalaryPlanePage",
         scroller:"body",
-        toggleActions: "restart none restart none", 
+        start:"top 80%",
+        toggleActions: "restart none none none", 
     }
 })
