@@ -1,17 +1,21 @@
 
+// let show = false;
+// const menue_btn = document.querySelector(".toggle_nav_button");
+// const nav_container = document.querySelector(".nav_navigation_container");
 
-const menue_btn = document.querySelector(".menue_btn");
-const nav_container = document.querySelector(".nav_navigation_container");
+// HandleNav_visible=()=>{
+//     console.log("bahar")
+//     if (show) {
+//         console.log("clicked_shw");
 
-menue_btn.addEventListener("click",()=>{
-    HandleNav_visible();
-})
+//         nav_container.style.display = "none"; 
+//         show = !show;
+//     }
+//     else{
+//         console.log("clicked_hiden")
 
-const HandleNav_visible = ()=>{
-    if (nav_container.classList.contains("navIsHidden")) {
-        nav_container.classList.remove("navIsHidden");
-    }
-    else{
-        nav_container.classList.add("navIsHidden");
-    }
-}
+//         nav_container.style.display = "block"; 
+//         show = !show;
+//     }
+// }
+// menue_btn.addEventListener("click",HandleNav_visible)
