@@ -140,7 +140,6 @@ gsap.fromTo(".InvestmentPlanPage .Investment_plan_box",
     scrollTrigger:{
         trigger:" .InvestmentPlanPage .Investment_plan_box",
         scroller:"body",
-        start:"top 99%",
         toggleActions: "restart none restart none", 
     }
 })
@@ -182,9 +181,8 @@ gsap.fromTo(".LevelOpeningPage img",
     stagger:0.2,
     duration:1,
     scrollTrigger:{
-        trigger:".LevelOpeningPage",
+        trigger:".LevelOpeningPage img",
         scroller:"body",
-        start:"top 80%",
         toggleActions: "restart none restart none", 
     }
 })
@@ -206,9 +204,8 @@ gsap.fromTo(".SalaryPlanePage .salary_plane_box",
     stagger:0.2,
     duration:1,
     scrollTrigger:{
-        trigger:".SalaryPlanePage",
+        trigger:".SalaryPlanePage .salary_plane_box",
         scroller:"body",
-        start:"top 80%",
         toggleActions: "restart none none none", 
     }
 })
