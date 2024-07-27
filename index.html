@@ -41,27 +41,35 @@
 
                <hr />
 
-               <a href="#howWorkSection"><div class="nav_navigation flex" >How Work</div></a>
+               <a href="#keyPointSection"><div class="nav_navigation flex" >Features</div></a>
+
+               <hr>
+
+               <a href="#howWorkSection"><div class="nav_navigation flex" >Working</div></a>
              
                <hr />
 
-               <a href="#upCommingSection"><div class="nav_navigation flex" >Up Comming</div></a>
-               
-               <hr />
-
-               <a href="#whyChooseSection"><div class="nav_navigation flex" >Why To Choose</div></a>
+               <a href="#investPlanSection"><div class="nav_navigation flex" >Investment Plans</div></a>
 
                <hr />
 
-                <a href="#footer"><div class="nav_navigation"  >Contact</div></a>
-                
+               <a href="#IncomeSourceSection"><div class="nav_navigation flex" >Income</div></a>
+
+               <hr />
+
+               <a href="#lavelOpeningSection"><div class="nav_navigation flex" >Level Opening</div></a>
+              
+               <hr />
+
+               <a href="#salaryPlanSection"><div class="nav_navigation flex" >Salary Plans</div></a>
+
             </div>
 
             <div class="signIn_button"> 
                 <button>Sign In</button>
             </div>
 
-            <div class= "toggle_nav_button" onClick={handleIsVisible}>
+            <div class= "toggle_nav_button" onClick={HandleNav_visible}>
                 <i class="fa-solid fa-bars fa-xl"></i>        
             </div>
     </nav>
@@ -96,7 +104,7 @@
 
       <!-- About Page -->
 
-      <div class='About_Page'>
+      <div class='About_Page' id="aboutSection">
       
         <div class='About_content_box'>
   
@@ -130,7 +138,7 @@
 
       <!-- Key Points Section -->
 
-    <div class="keyPointPage">
+    <div class="keyPointPage" id="keyPointSection">
         <div class="section_heading_container">
             <div class='mini_heading'>Key Points</div>
             <h1>Our Key Points</h1>
@@ -173,7 +181,7 @@
 
     <!-- how it work section -->
 
-    <div class="HowWorkPage">
+    <div class="HowWorkPage" id="howWorkSection">
         <div class="section_heading_container">
             <div class='mini_heading'>Working</div>
             <h1>How It Works</h1>
@@ -256,7 +264,7 @@
 
     <!-- investment plan section -->
 
-    <div class="InvestmentPlanPage">
+    <div class="InvestmentPlanPage" id="investPlanSection">
         <div class="section_heading_container">
             <div class='mini_heading'>Invest Offer</div>
             <h1>Invest With Confidence At Cinestar</h1>
@@ -296,7 +304,7 @@
 
     <!-- Income Source style -->
 
-    <div class="IncomeSourcePage">
+    <div class="IncomeSourcePage" id="IncomeSourceSection">
         <div class="section_heading_container">
             <div class='mini_heading'>Income</div>
             <h1>Income Source</h1>
@@ -318,7 +326,7 @@
 
     <!-- level opening section -->
 
-    <div class="LevelOpeningPage">
+    <div class="LevelOpeningPage" id="lavelOpeningSection">
         <div class="section_heading_container">
             <div class='mini_heading'>Levels</div>
             <h1>Level Opening</h1>
@@ -331,7 +339,7 @@
 
     <!--Salary plane section -->
 
-    <div class="SalaryPlanePage">
+    <div class="SalaryPlanePage" id="salaryPlanSection">
         <div class="section_heading_container">
             <div class='mini_heading'>Salary</div>
             <h1>Salary Plan</h1>
@@ -407,9 +415,11 @@
     </footer>
 
 
-
+<!-- GSAP CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
     <script src="script.js"></script>
+    <script src="AnimationScript.js"></script>
 </body>
 </html>

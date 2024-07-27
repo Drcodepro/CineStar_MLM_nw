@@ -308,9 +308,10 @@ display: none;
     }
 
     .navIsHidden{
-        display: none;
+        display:block;
         left:100%;
     }
+    
     .nav_navigation_container{
         position: absolute;
         top:100%;
