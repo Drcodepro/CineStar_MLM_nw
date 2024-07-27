@@ -105,21 +105,21 @@ gsap.fromTo(".subscriptionPage .sub_point",
 })
 
 
-// gsap.fromTo(".subscriptionPage .subscription_poster", 
-//     {
-//         opacity: 0,
-//         translateX:-100
-//     },
-//     {
-//     opacity:1,
-//     translateX:0,
-//     duration:1,
-//     scrollTrigger:{
-//         trigger:" .subscriptionPage .subscription_poster",
-//         scroller:"body",
-//         toggleActions: "restart none restart none", 
-//     }
-// })
+gsap.fromTo(".subscriptionPage .subscription_poster", 
+    {
+        opacity: 0,
+        translateX:-100
+    },
+    {
+    opacity:1,
+    translateX:0,
+    duration:1,
+    scrollTrigger:{
+        trigger:" .subscriptionPage .subscription_poster",
+        scroller:"body",
+        toggleActions: "restart none restart none", 
+    }
+})
 
 
 
