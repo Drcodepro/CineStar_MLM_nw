@@ -248,7 +248,7 @@
 
 /* button style end */
 
-.nav_container .toggle_nav_button{
+.nav_container #toggle_nav_button{
 display: none;
 }
 
@@ -269,6 +269,10 @@ display: none;
 }
 
 @media (max-width:800px) {
+    .nav_container{
+        padding:1rem 1rem;
+        
+    }
     .nav_navigation_container{
         gap: 1rem;
         font-size: 0.6rem;
@@ -296,10 +300,9 @@ display: none;
         display:block;
     }
 
-    .nav_container .toggle_nav_button{
-        display: block;  
-        height: fit-content;
-        width: fit-content;
+    .nav_container #toggle_nav_button{
+        display:block;  
+        z-index:2;
     }
 
     .nav_container .signIn_button{
