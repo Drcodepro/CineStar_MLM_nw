@@ -139,11 +139,13 @@ html{
 }
 
 .nav_container a{
+    text-decoration: none;
+    color: white;
+    text-align: start;
+    width: 100%;
     &:active{
         color: rgb(255, 49, 49);
     }
-    text-decoration: none;
-    color: white;
 }
 
 .site_name_nav{
@@ -294,10 +296,16 @@ display: none;
         padding:0.5rem 1rem;
         
     }
+    .nav_container a{
+        width: 100%;
+    }
     .nav_navigation {
         width: 100%;
-        text-align: center;
-       
+        text-align: start;
+        &:hover {
+            transform:scale(0.9);
+        }
+    }
     }
 
     .nav_navigation_container hr{
