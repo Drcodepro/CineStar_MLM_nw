@@ -121,8 +121,6 @@
 
 .nav_container{
     position:relative;
-    top: 0;
-    left: 0;
     padding:1rem 2rem;
     box-sizing: border-box;
     width: 100%;
@@ -285,7 +283,7 @@ display: none;
 
 @media (max-width:690px) {
     .nav_container{
-        padding:0.5rem 2rem;
+        padding:0.5rem 1rem;
         
     }
     .nav_navigation {
@@ -300,19 +298,25 @@ display: none;
 
     .nav_container .toggle_nav_button{
         display: block;  
+        height: fit-content;
+        width: fit-content;
     }
 
     .nav_container .signIn_button{
         display: none;
     }
 
-    .navIsHidden{
-        display:none;
-        left:100%;
-    }
+
 
     .nav_navigation_container{
         position: absolute;
+        top:100%;
+        right:100%;
+        transition: all 0.5s linear;
+    }  
+
+
+    .navigation_mobile{
         top:100%;
         right:0%;
         height: fit-content;
@@ -331,8 +335,7 @@ display: none;
         border-top-left-radius: 1rem;
         border-bottom-left-radius: 1rem;
         z-index: 99;
-    }  
-
+    }
 }
 
 @media (max-width:516px) {
