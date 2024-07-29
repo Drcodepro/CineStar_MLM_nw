@@ -5,11 +5,13 @@
     box-sizing: border-box;
     font-family: "Oswald", sans-serif;
   }
+html{
+  scroll-behavior: smooth;
+}
 
   body{
     background-color: black;
     overflow-x: hidden;
-    scroll-behavior: smooth;
 }
 
 /* p{
