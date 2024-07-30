@@ -142,7 +142,7 @@ html{
     text-decoration: none;
     color: white;
     text-align: start;
-    width: 100%;
+    width:fit-content;
     &:active{
         color: rgb(255, 49, 49);
     }
@@ -306,7 +306,7 @@ display: none;
             transform:scale(0.9);
         }
     }
-    }
+    
 
     .nav_navigation_container hr{
         display:block;
