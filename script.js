@@ -27,3 +27,18 @@ const ppt_btn = document.querySelector("#PPT_btn");
 ppt_btn.addEventListener("click",()=>{
     window.open("./Cine_Star_ppt .pdf");
 })
+
+
+// navigation animation hover
+
+const navigations = document.querySelectorAll(".nav_navigation");
+
+navigations.forEach((navigation)=>{
+    navigation.addEventListener("mouseover",(event)=>{
+        navigation.classList.add("navHover");
+    })
+
+    navigation.addEventListener("mouseout",(event)=>{
+        navigation.classList.remove("navHover");
+    })
+})

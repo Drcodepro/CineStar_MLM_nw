@@ -32,9 +32,6 @@ html{
 }
 
 
-
-
-
  .mini_heading {
     width: fit-content;
     padding: 0.5rem 2rem;
@@ -168,15 +165,25 @@ html{
 
 .nav_navigation {
     cursor: pointer; 
-    &:hover {
-        transform: translateY(-3px) scale(0.9);
+}
 
-    }
+.navHover{
+    color:rgb(255, 94, 94);
+}
+
+
+.nav_navigation_container .hide{
+    display: none;
 }
 
 
 
-
+.nav_container .nav_btn_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem;    
+}
 
 
 
@@ -267,10 +274,13 @@ display: none;
         font-size: 0.8rem;
     }
 
-    .nav_container .signIn_button{
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        font-size: 0.8rem;
+    .nav_container .signIn_button button{
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+        font-size: 0.9rem;
+    }
+    .nav_container .nav_btn_container{
+        gap:0.5rem;    
     }
 }
 
@@ -295,6 +305,9 @@ display: none;
     .nav_container{
         padding:0.5rem 1rem;
         
+    }
+    .nav_navigation_container .hide{
+        display:block;
     }
     .nav_container a{
         width: 100%;
