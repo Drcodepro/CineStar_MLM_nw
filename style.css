@@ -315,9 +315,6 @@ display: none;
     .nav_navigation {
         width: 100%;
         text-align: start;
-        &:hover {
-            transform:scale(0.9);
-        }
     }
     
 
