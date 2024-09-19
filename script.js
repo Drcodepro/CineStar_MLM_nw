@@ -25,7 +25,7 @@ document.addEventListener("click",()=>{
 const ppt_btn = document.querySelector("#PPT_btn");
 
 ppt_btn.addEventListener("click",()=>{
-    window.open("./Cine_Star_ppt .pdf");
+    window.open("./Cine_Star.pdf");
 })
 
 

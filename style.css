@@ -734,15 +734,15 @@ display: none;
 
     background-image: url(./assets/image/about_bg.png);
     background-size: cover;
-
     opacity: 0;
+
 }
 
-
 /* animation class */
+
 .AboutBox_anim{
     animation-name: AboutPage_anim ;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
     scale: 0;
@@ -757,6 +757,8 @@ display: none;
         transform: translateX(0px);
     }
 }
+
+
 
 
 .About_content_box .about_info_container{
